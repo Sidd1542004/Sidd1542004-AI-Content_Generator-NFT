@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav {
+    background: linear-gradient(to right, #4a90e2, #9013fe);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 28px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Box */
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    transition: border 0.3s;
+  }
+  
+  textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* Button */
+  button {
+    background: #ffcc00;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Story Output */
+  .story-container {
+    margin-top: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .story-container h2 {
+    font-size: 22px;
+    color: #673ab7;
+    margin-bottom: 10px;
+  }
+  
+  .story-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    textarea {
+      height: 100px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
